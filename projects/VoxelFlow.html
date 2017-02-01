@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0059)http://handtracker.mpi-inf.mpg.de/projects/FastHandTracker/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Video Frame Synthesis using Deep Voxel Flow</title>
+
+<!-- Meta tags for search engines to crawl -->
+<meta name="robots" content="index,follow">
+<meta name="description" content="We address the problem of synthesizing new video frames in an existing video, either in-between existing frames (interpolation), or subsequent to them (extrapolation). This problem is challenging because video appearance and motion can be highly complex. Traditional optical-flow-based solutions often fail where flow estimation is challenging, while newer neural-network-based methods that hallucinate pixel values directly often produce blurry results. We combine the advantages of these two methods by training a deep network that learns to synthesize video frames by flowing pixel values from existing ones, which we call deep voxel flow. Our method requires no human supervision, and any video can be used as training data by dropping, and then learning to predict, existing frames. The technique is efficient, and can be applied at any video resolution. We demonstrate that our method produces results that both quantitatively and qualitatively improve upon the state-of-the-art.>
+<meta name="keywords" content="video frame synthesis; video interpolation; slo-mo effect; deep voxel flow; optical flow estimation; unsupervised learning; deep learning;">
+<link rel="author" href="personal.ie.cuhk.edu.hk/~lz013/">
+
+<!-- Fonts and stuff -->
+<link href="./voxelflow/css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./voxelflow/project.css" media="screen">
+<link rel="stylesheet" type="text/css" media="screen" href="./voxelflow/iconize.css">
+<script async="" src="./voxelflow/prettify.js"></script>
+
+
+</head>
+
+<body>
+  <div id="content">
+    <div id="content-inner">
+      
+      <div class="section head">
+	<h1>Video Frame Synthesis using Deep Voxel Flow</h1>
+
+	<div class="authors">
+	  <a href="http://personal.ie.cuhk.edu.hk/~lz013/">Ziwei Liu</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://www.isle.illinois.edu/~yeh17/">Raymond Yeh</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://www.ie.cuhk.edu.hk/people/xotang.shtml">Xiaoou Tang</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://bitstream9.me/">Yiming Liu</a><sup>3</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://www.agarwala.org/">Aseem Agarwala</a><sup>3</sup>
+	</div>
+
+	<div class="affiliations">
+	  1. <a href="http://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  2. <a href="http://illinois.edu/">University of Illinois at Urbana-Champaign</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  3. <a href="https://research.google.com/">Google Inc.</a>
+	</div>
+
+	<!-- <div class="venue">European Conference on Computer Vision (<a href="http://www.eccv2016.org/" target="_blank">ECCV</a>) 2016</div> -->
+      
+      </div>
+      
+      <center><img src="./voxelflow/intro.jpg" border="0" width="80%"></center>
+
+<div class="section abstract">
+	<h2>Abstract</h2>
+	<br>
+	<p>
+We address the problem of synthesizing new video frames in an existing video, either in-between existing frames (interpolation), or subsequent to them (extrapolation). This problem is challenging because video appearance and motion can be highly complex. Traditional optical-flow-based solutions often fail where flow estimation is challenging, while newer neural-network-based methods that hallucinate pixel values directly often produce blurry results. We combine the advantages of these two methods by training a deep network that learns to synthesize video frames by flowing pixel values from existing ones, which we call deep voxel flow. Our method requires no human supervision, and any video can be used as training data by dropping, and then learning to predict, existing frames. The technique is efficient, and can be applied at any video resolution. We demonstrate that our method produces results that both quantitatively and qualitatively improve upon the state-of-the-art.
+	</p>
+      </div>
+      
+<div class="section demo">
+	<h2>Demo Video</h2>
+	<br>
+	<center>
+	  <video width="90%" controls loop autoplay>
+  	  <source src="./voxelflow/demo_voxelflow.mp4" type="video/mp4">
+	</video>
+	    </center>
+	    </div>
+	    
+<br>
+
+<div class="section materials">
+	<h2>Materials</h2>
+	<p>
+	Coming soon.
+	</p>
+	    </div>
+
+<div class="section citation">
+	<h2>Citation</h2>
+	<div class="section bibtex">
+	  <pre>@inproceedings{liu2017voxelflow,
+ author = {Ziwei Liu, Raymond Yeh, Xiaoou Tang, Yiming Liu, and Aseem Agarwala},
+ title = {Video Frame Synthesis using Deep Voxel Flow},
+ year = {2017} 
+}</pre>
+	  </div>
+      </div>
+
+</body></html>
