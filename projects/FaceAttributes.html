@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0059)http://handtracker.mpi-inf.mpg.de/projects/FastHandTracker/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Deep Learning Face Attributes in the Wild</title>
+
+<!-- Meta tags for search engines to crawl -->
+<meta name="robots" content="index,follow">
+<meta name="description" content="Predicting face attributes in the wild is challenging due to complex face variations. We propose a novel deep learning framework for attribute prediction in the wild. It cascades two CNNs, LNet and ANet, which are fine-tuned jointly with attribute tags, but pre-trained differently. LNet is pre-trained by massive general object categories for face localization, while ANet is pre-trained by massive face identities for attribute prediction. This framework not only outperforms the state-of-the-art with a large margin, but also reveals valuable facts on learning face representation.
+(1) It shows how the performances of face localization (LNet) and attribute prediction (ANet) can be improved by different pre-training strategies.
+(2) It reveals that although the filters of LNet are fine-tuned only with image-level attribute tags, their response maps over entire images have strong indication of face locations. This fact enables training LNet for face localization with only image-level annotations, but without face bounding boxes or landmarks, which are required by all attribute recognition works.
+(3) It also demonstrates that the high-level hidden neurons of ANet automatically discover semantic concepts after pre-training with massive face identities, and such concepts are significantly enriched after fine-tuning with attribute tags. Each attribute can be well explained with a sparse linear combination of these concepts.>
+<meta name="keywords" content="face attributes; fine-grained classification; weakly-supervised learning; deep learning; convolutional neural network; computer vision;">
+<link rel="author" href="personal.ie.cuhk.edu.hk/~lz013/">
+
+<!-- Fonts and stuff -->
+<link href="./faceattributes/css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./faceattributes/project.css" media="screen">
+<link rel="stylesheet" type="text/css" media="screen" href="./faceattributes/iconize.css">
+<script async="" src="./faceattributes/prettify.js"></script>
+
+
+</head>
+
+<body>
+  <div id="content">
+    <div id="content-inner">
+      
+      <div class="section head">
+	<h1>Deep Learning Face Attributes in the Wild</h1>
+
+	<div class="authors">
+	  <a href="http://personal.ie.cuhk.edu.hk/~lz013/">Ziwei Liu</a>&nbsp;&nbsp;
+	  <a href="http://personal.ie.cuhk.edu.hk/~pluo/">Ping Luo</a>&nbsp;&nbsp;
+	  <a href="http://www.ee.cuhk.edu.hk/~xgwang/" >Xiaogang Wang</a>&nbsp;&nbsp;
+	  <a href="http://www.ie.cuhk.edu.hk/people/xotang.shtml">Xiaoou Tang</a>
+	</div>
+
+	<div class="affiliations">
+	  <a href="http://mmlab.ie.cuhk.edu.hk/">Multimedia Laboratory, </a>
+	  <!-- <a href="http://www.ie.cuhk.edu.hk/">Department of Information Engineering, </a> -->
+	  <a href="http://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong</a>
+	</div>
+
+	<div class="venue">International Conference on Computer Vision (<a href="http://pamitc.org/iccv15/" target="_blank">ICCV</a>) 2015</div>
+      </div>
+
+      
+      <center><img src="./faceattributes/intro.png" border="0" width="90%"></center>
+
+<div class="section abstract">
+	<h2>Abstract</h2>
+	<br>
+	<p>
+Predicting face attributes in the wild is challenging due to complex face variations. We propose a novel deep learning framework for attribute prediction in the wild. It cascades two CNNs, LNet and ANet, which are fine-tuned jointly with attribute tags, but pre-trained differently. LNet is pre-trained by massive general object categories for face localization, while ANet is pre-trained by massive face identities for attribute prediction. This framework not only outperforms the state-of-the-art with a large margin, but also reveals valuable facts on learning face representation.
+(1) It shows how the performances of face localization (LNet) and attribute prediction (ANet) can be improved by different pre-training strategies.
+(2) It reveals that although the filters of LNet are fine-tuned only with image-level attribute tags, their response maps over entire images have strong indication of face locations. This fact enables training LNet for face localization with only image-level annotations, but without face bounding boxes or landmarks, which are required by all attribute recognition works.
+(3) It also demonstrates that the high-level hidden neurons of ANet automatically discover semantic concepts after pre-training with massive face identities, and such concepts are significantly enriched after fine-tuning with attribute tags. Each attribute can be well explained with a sparse linear combination of these concepts.
+	</p>
+      </div>
+
+<div class="section spotlight">
+	<h2>Spotlight</h2><center>
+      	<iframe width="560" height="315" src="https://www.youtube.com/embed/Clk5-B5w2c8" frameborder="0" allowfullscreen></iframe>
+      </div></center>
+      
+<div class="section materials">
+	<h2>Materials</h2>
+	<center>
+	  <ul>
+            <li class="grid">
+	      <div class="griditem">
+		<a href="http://arxiv.org/abs/1411.7766" target="_blank" class="imageLink"><img src="./faceattributes/paper.png"></a><br>
+		  <a href="http://arxiv.org/abs/1411.7766" target="_blank">Paper</a>
+		</div>
+	      </li>
+	    <li class="grid">
+	      <div class="griditem">
+		<a href="../papers/faceattributes_supp.pdf" target="_blank" class="imageLink"><img src="./faceattributes/supp.jpg"></a><br>
+		  <a href="../papers/faceattributes_supp.pdf" target="_blank">Supplementary</a>
+		</div>
+	      </li>
+	    <li class="grid">
+	      <div class="griditem">
+		<a href="../papers/faceattributes_poster.pdf" target="_blank" class="imageLink"><img src="./faceattributes/poster.png"></a><br>
+		  <a href="../papers/faceattributes_poster.pdf" target="_blank">Poster</a>
+		</div>
+	      </li>
+	    <!-- <li class="grid">
+	      <div class="griditem">
+		<img src="./faceattributes/dataset.png"></a><br>
+		  Social Relation Dataset<br>[Coming Soon]
+		</div>
+	      </li> -->
+	  
+	    </ul>
+	    </center>
+	    </div>
+	    
+<br>
+
+<div class="section spotlight">
+	<h2>Dataset</h2>
+		<br>
+		<p><b>CelebFaces Attributes Dataset (CelebA)</b> is a large-scale face attributes dataset with more than <b>200K</b> celebrity images, each with <b>40</b> attribute annotations. The images in this dataset cover large pose variations and background clutter. CelebA has large diversities, large quantities, and rich annotations, including</p>
+
+	<ul>
+	<li><p><b>10,177</b> number of <b>identities</b>,</p>
+	</li>
+	<li><p><b>202,599</b> number of <b>face images</b>, and</p>
+	</li>
+	<li><p><b>5 landmark locations</b>, <b>40 binary attributes</b> annotations per image.</p>
+	</li>
+	</ul>
+	The dataset can be employed as the training and test sets for the following computer vision tasks: face attribute recognition, face detection, face landmark (or facial part) localization and face synthesis.
+
+	<br>
+	<br>
+	<br>
+
+		<center>
+      	<a href="http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html" target="_blank" class="imageLink"><img src="./faceattributes/dataset.png" border="2" width="70%"></a><br>
+      	<a href="http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html" target="_blank">CelebA Dataset</a>
+      </div></center>
+
+<br>
+
+<div class="section materials">
+	<h2>Related Dataset</h2>
+	<center>
+	  <ul>
+            <li class="grid">
+	      <div class="griditem">
+		<a href="https://www.dropbox.com/sh/2657rgcts8x45s1/AAA8XCv6OeVjdhlk9WGoe7oha?dl=0" target="_blank" class="imageLink"><img src="./faceattributes/icon_zip.png"></a><br>
+		  <a href="https://www.dropbox.com/sh/2657rgcts8x45s1/AAA8XCv6OeVjdhlk9WGoe7oha?dl=0" target="_blank">LFWA+ Dataset</a>
+		</div>
+	      </li>
+	  
+	    </ul>
+	    </center>
+	    </div>
+	    
+<br>
+
+<div class="section citation">
+	<h2>Citation</h2>
+	<div class="section bibtex">
+	  <pre>@inproceedings{liu2015faceattributes,
+ author = {Ziwei Liu, Ping Luo, Xiaogang Wang, and Xiaoou Tang},
+ title = {Deep Learning Face Attributes in the Wild},
+ booktitle = {Proceedings of International Conference on Computer Vision (ICCV)},
+ month = December,
+ year = {2015} 
+}</pre>
+	  </div>
+      </div>
+
+</body></html>

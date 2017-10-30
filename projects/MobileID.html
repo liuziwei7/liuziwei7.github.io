@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MobileID: Face Model Compression by Distilling Knowledge from Neurons
+</title>
+
+<!-- Meta tags for search engines to crawl -->
+<meta name="robots" content="index,follow">
+<meta name="description" content="The recent advanced face recognition systems were built on large Deep Neural Networks (DNNs) or their ensembles, which have millions of parameters. However, the expensive computation of DNNs make their deployment difficult on mobile and embedded devices. This work addresses model compression for face recognition, where the learned knowledge of a large teacher network or its ensemble is utilized as supervision to train a compact student network. Unlike previous works that represent the knowledge by the soften label probabilities, which are difficult to fit, we represent the knowledge by using the neurons at the higher hidden layer, which preserve as much information as the label probabilities, but are more compact. By leveraging the essential characteristics (domain knowledge) of the learned face representation, a neuron selection method is proposed to choose neurons that are most relevant to face recognition. Using the selected neurons as supervision to mimic the single networks of DeepID2+ and DeepID3, which are the state-of-the-art face recognition systems, a compact student with simple network structure achieves better verification accuracy on LFW than its teachers, respectively. When using an ensemble of DeepID2+ as teacher, a mimicked student is able to outperform it and achieves 51.6x compression ratio and 90x speed-up in inference, making this cumbersome model applicable on portable devices.>
+<meta name="keywords" content="face recognition; dark knowledge; distilling knowledge from neurons; model compression; deep learning;">
+<link rel="author" href="personal.ie.cuhk.edu.hk/~lz013/">
+
+<!-- Fonts and stuff -->
+<link href="./mobileid/css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./mobileid/project.css" media="screen">
+<link rel="stylesheet" type="text/css" media="screen" href="./mobileid/iconize.css">
+<script async="" src="./mobileid/prettify.js"></script>
+
+
+</head>
+
+<body>
+  <div id="content">
+    <div id="content-inner">
+      
+      <div class="section head">
+	<h1>MobileID: Face Model Compression by Distilling Knowledge from Neurons</h1>
+
+	<div class="authors">
+	  <a href="http://personal.ie.cuhk.edu.hk/~pluo/">Ping Luo*</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="https://scholar.google.com/citations?user=r3k-4MYAAAAJ&hl=en">Zhenyao Zhu*</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://personal.ie.cuhk.edu.hk/~lz013/">Ziwei Liu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://www.ee.cuhk.edu.hk/~xgwang/">Xiaogang Wang</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://www.ie.cuhk.edu.hk/people/xotang.shtml">Xiaoou Tang</a>
+	</div>
+
+	<div class="affiliations">
+	  <a href="http://mmlab.ie.cuhk.edu.hk/">Multimedia Laboratory, </a>
+	  <a href="http://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong</a>
+	</div>
+
+	<div class="venue">AAAI Conference on Artificial Intelligence (<a href="http://www.aaai.org/Conferences/AAAI/aaai16.php" target="_blank">AAAI</a>) 2016, <font color="#e86e14">Oral Presentation</font> </div>
+      
+      </div>
+      
+      <center><img src="./mobileid/intro.png" border="0" width="90%"></center>
+
+<div class="section abstract">
+	<h2>Abstract</h2>
+	<br>
+	<p>
+The recent advanced face recognition systems were built on large Deep Neural Networks (DNNs) or their ensembles, which have millions of parameters. However, the expensive computation of DNNs make their deployment difficult on mobile and embedded devices. This work addresses model compression for face recognition, where the learned knowledge of a large teacher network or its ensemble is utilized as supervision to train a compact student network. Unlike previous works that represent the knowledge by the soften label probabilities, which are difficult to fit, we represent the knowledge by using the neurons at the higher hidden layer, which preserve as much information as the label probabilities, but are more compact. By leveraging the essential characteristics (domain knowledge) of the learned face representation, a neuron selection method is proposed to choose neurons that are most relevant to face recognition. Using the selected neurons as supervision to mimic the single networks of DeepID2+ and DeepID3, which are the state-of-the-art face recognition systems, a compact student with simple network structure achieves better verification accuracy on LFW than its teachers, respectively. When using an ensemble of DeepID2+ as teacher, a mimicked student is able to outperform it and achieves 51.6x compression ratio and 90x speed-up in inference, making this cumbersome model applicable on portable devices.
+	</p>
+      </div>
+
+<div class="section materials">
+	<h2>Materials</h2>
+	<center>
+	  <ul>
+           
+          <li class="grid">
+	      <div class="griditem">
+		<a href="http://personal.ie.cuhk.edu.hk/~pluo/pdf/aaai16-face-model-compression.pdf" target="_blank" class="imageLink"><img src="./mobileid/paper.jpg"></a><br>
+		  <a href="http://personal.ie.cuhk.edu.hk/~pluo/pdf/aaai16-face-model-compression.pdf" target="_blank">Paper</a>
+		</div>
+	      </li>
+
+	      <li class="grid">
+	      <div class="griditem">
+		<a href="../papers/mobileid_supp.pdf" target="_blank" class="imageLink"><img src="./mobileid/supp.jpg"></a><br>
+		  <a href="../papers/mobileid_supp.pdf" target="_blank">Supplementary</a>
+		</div>
+	      </li>
+	  
+	    </ul>
+	    </center>
+	    </div>
+
+<br>
+
+<div class="section code">
+	<h2>Code and Models</h2>
+	<center>
+	  <ul>
+           
+          <li class="grid">
+	      <div class="griditem">
+		<a href="https://github.com/liuziwei7/mobile-id" target="_blank" class="imageLink"><img src="./mobileid/code.png"></a><br>
+		  <a href="https://github.com/liuziwei7/mobile-id" target="_blank">Code and Models</a>
+		</div>
+	      </li>
+
+	    </ul>
+	    </center>
+	    </div>
+
+<br>
+
+<div class="section citation">
+	<h2>Citation</h2>
+	<div class="section bibtex">
+	  <pre>@inproceedings{luo2016mobileid,
+ author = {Ping Luo, Zhenyao Zhu, Ziwei Liu, Xiaogang Wang, and Xiaoou Tang},
+ title = {Face Model Compression by Distilling Knowledge from Neurons},
+ booktitle = {AAAI Conference on Artificial Intelligence (AAAI)},
+ month = {February},
+ year = {2016} 
+}</pre>
+	  </div>
+      </div>
+
+</body></html>
