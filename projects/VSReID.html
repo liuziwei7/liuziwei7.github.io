@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Video Object Segmentation with Re-identification</title>
+
+<!-- Meta tags for search engines to crawl -->
+<meta name="robots" content="index,follow">
+<meta name="description" content="Conventional video segmentation methods often rely on temporal continuity to propagate masks. Such an assumption suffers from issues like drifting and inability to handle large displacement. To overcome these issues, we formulate an effective mechanism to prevent the target from being lost via adaptive object re-identification. Specifically, our Video Object Segmentation with Re-identification (VS- ReID) model includes a mask propagation module and a ReID module. The former module produces an initial probability map by flow warping while the latter module retrieves missing instances by adaptive matching. With these two modules iteratively applied, our VS-ReID records a global mean (Region Jaccard and Boundary F measure) of 0.699, the best performance in 2017 DAVIS Challenge.">
+<meta name="keywords" content="video segmentation; tracking; flow; re-identification; deep learning;">
+<link rel="author" href="https://liuziwei7.github.io/">
+
+<!-- Fonts and stuff -->
+<link href="./vsreid/css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./vsreid/project.css" media="screen">
+<link rel="stylesheet" type="text/css" media="screen" href="./vsreid/iconize.css">
+<script async="" src="./vsreid/prettify.js"></script>
+
+
+</head>
+
+<body>
+  <div id="content">
+    <div id="content-inner">
+      
+      <div class="section head">
+	<h1>Video Object Segmentation with Re-identification</h1>
+
+	<div class="authors">
+	  <a href="https://scholar.google.com/citations?user=udZam0oAAAAJ&hl=en">Xiaoxiao Li</a>&nbsp;&nbsp;&nbsp;
+	  <a href="">Yuankai Qi</a>&nbsp;&nbsp;&nbsp;
+	  <a href="https://scholar.google.com/citations?user=546GPMoAAAAJ&hl=en">Zhe Wang</a>&nbsp;&nbsp;&nbsp;
+	  <a href="http://chenkai.site/">Kai Chen</a>&nbsp;&nbsp;&nbsp;
+	  <a href="https://liuziwei7.github.io/">Ziwei Liu</a>&nbsp;&nbsp;&nbsp;
+	  <a href="http://shijianping.me/">Jianping Shi</a>&nbsp;&nbsp;&nbsp;
+	  <a href="http://personal.ie.cuhk.edu.hk/~pluo/">Ping Luo</a>&nbsp;&nbsp;&nbsp;
+	  <a href="http://www.ie.cuhk.edu.hk/people/xotang.shtml">Xiaoou Tang</a>&nbsp;&nbsp;&nbsp;
+	  <a href="http://personal.ie.cuhk.edu.hk/~ccloy/">Chen Change Loy</a>
+	</div>
+
+	<div class="affiliations">
+	  <a href="http://mmlab.ie.cuhk.edu.hk/">Multimedia Laboratory, </a>
+	  <a href="http://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong</a>
+	</div>
+
+	<div class="venue">IEEE Conference on Computer Vision and Pattern Recognition (<a href="http://cvpr2017.thecvf.com/" target="_blank">CVPR</a>) 2017, DAVIS Video Seg. Challenge, <font color="#e86e14">Winning Entry</font> </div>
+      
+      </div>
+      
+      <center><img src="./vsreid/intro.png" border="0" width="90%"></center>
+
+<div class="section abstract">
+	<h2>Abstract</h2>
+	<br>
+	<p>
+Conventional video segmentation methods often rely on temporal continuity to propagate masks. Such an assumption suffers from issues like drifting and inability to handle large displacement. To overcome these issues, we formulate an effective mechanism to prevent the target from being lost via adaptive object re-identification. Specifically, our Video Object Segmentation with Re-identification (VS- ReID) model includes a mask propagation module and a ReID module. The former module produces an initial probability map by flow warping while the latter module retrieves missing instances by adaptive matching. With these two modules iteratively applied, our VS-ReID records a global mean (Region Jaccard and Boundary F measure) of 0.699, the best performance in 2017 DAVIS Challenge.
+	</p>
+      </div>
+
+<div class="section demo">
+	<h2>Demo</h2><center>
+		<br>
+      	<img src="./vsreid/demo.gif" border="2" width="60%">
+      </div></center>
+
+<br>
+      
+<div class="section materials">
+	<h2>Materials</h2>
+	<center>
+	  <ul>
+           
+          <li class="grid">
+	      <div class="griditem">
+		<a href="https://arxiv.org/abs/1708.00197" target="_blank" class="imageLink"><img src="./vsreid/paper.jpg"></a><br>
+		  <a href="https://arxiv.org/abs/1708.00197" target="_blank">Paper</a>
+		</div>
+	      </li>
+
+	      <li class="grid">
+	      <div class="griditem">
+		<a href="../papers/vsreid_poster.pdf" target="_blank" class="imageLink"><img src="./vsreid/poster.jpg"></a><br>
+		  <a href="../papers/vsreid_poster.pdf" target="_blank">Poster</a>
+		</div>
+	      </li>
+
+	      <li class="grid">
+	      <div class="griditem">
+		<a href="../papers/vsreid_slides.pdf" target="_blank" class="imageLink"><img src="./vsreid/slides.jpg"></a><br>
+		  <a href="../papers/vsreid_slides.pdf" target="_blank">Slides</a>
+		</div>
+	      </li>
+	  
+	    </ul>
+	    </center>
+	    </div>
+	    
+<br>
+
+<div class="section citation">
+	<h2>Citation</h2>
+	<div class="section bibtex">
+	  <pre>@inproceedings{zhan2018m&m,
+ author = {Xiaoxiao Li, Yuankai Qi, Zhe Wang, Kai Chen, Ziwei Liu, Jianping Shi, Ping Luo, Xiaoou Tang, and Chen Change Loy},
+ title = {Video Object Segmentation with Re-identification},
+ booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshop},
+ month = {July},
+ year = {2017} 
+}</pre>
+	  </div>
+      </div>
+
+</body></html>
