@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Dynamic Graph CNN for Learning on Point Clouds</title>
+
+<!-- Meta tags for search engines to crawl -->
+<meta name="robots" content="index,follow">
+<meta name="description" content="Point clouds provide a flexible and scalable geometric representation suitable for countless applications in computer graphics; they also comprise the raw output of most 3D data acquisition devices. Hence, the design of intelligent computational models that act directly on point clouds is critical, especially when efficiency considerations or noise preclude the possibility of expensive denoising and meshing procedures. While hand-designed features on point clouds have long been proposed in graphics and vision, however, the recent overwhelming success of convolutional neural networks (CNNs) for image analysis suggests the value of adapting insight from CNN to the point cloud world. To this end, we propose a new neural network module dubbed EdgeConv suitable for CNN-based high-level tasks on point clouds including classification and segmentation. EdgeConv is differentiable and can be plugged into existing architectures. Compared to existing modules operating largely in extrinsic space or treating each point independently, EdgeConv has several appealing properties: It incorporates local neighborhood information; it can be stacked or recurrently applied to learn global shape properties; and in multi-layer systems affinity in feature space captures semantic characteristics over potentially long distances in the original embedding. Beyond proposing this module, we provide extensive evaluation and analysis revealing that EdgeConv captures and exploits fine-grained geometric properties of point clouds. The proposed approach achieves state-of-the-art performance on standard benchmarks including ModelNet40 and S3DIS.>
+<meta name="keywords" content="point cloud; graph CNN; 3D vision; deep learning;">
+<link rel="author" href="https://liuziwei7.github.io/">
+
+<!-- Fonts and stuff -->
+<link href="./dgcnn/css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./dgcnn/project.css" media="screen">
+<link rel="stylesheet" type="text/css" media="screen" href="./dgcnn/iconize.css">
+<script async="" src="./dgcnn/prettify.js"></script>
+
+
+</head>
+
+<body>
+  <div id="content">
+    <div id="content-inner">
+      
+      <div class="section head">
+	<h1>Dynamic Graph CNN for Learning on Point Clouds</h1>
+
+	<div class="authors">
+	  <a href="https://www.csail.mit.edu/person/yue-wang">Yue Wang*</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="https://autoid.mit.edu/people-2">Yongbin Sun*</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="https://liuziwei7.github.io/">Ziwei Liu</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://meche.mit.edu/people/faculty/sesarma%40mit.edu">Sanjay E. Sarma</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://www.cs.technion.ac.il/~mbron/">Michael M. Bronstein</a><sup>3</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://people.csail.mit.edu/jsolomon/">Justin M. Solomon</a><sup>1</sup>
+	</div>
+
+	<div class="affiliations">
+	  1. <a href="http://web.mit.edu/">Massachusetts Institute of Technology</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  2. <a href="https://www.berkeley.edu/">UC Berkeley</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  3. <a href="https://www.usi.ch/">USI / TAU / Intel</a>
+	</div>
+
+	<div class="venue">Preprint Manuscript (<a href="https://arxiv.org" target="_blank">Arxiv</a>) 2018</div>
+      </div>
+
+      
+      <center><img src="./dgcnn/intro.png" border="0" width="90%"></center>
+
+<div class="section abstract">
+	<h2>Abstract</h2>
+	<br>
+	<p>
+Point clouds provide a flexible and scalable geometric representation suitable for countless applications in computer graphics; they also comprise the raw output of most 3D data acquisition devices. Hence, the design of intelligent computational models that act directly on point clouds is critical, especially when efficiency considerations or noise preclude the possibility of expensive denoising and meshing procedures. While hand-designed features on point clouds have long been proposed in graphics and vision, however, the recent overwhelming success of convolutional neural networks (CNNs) for image analysis suggests the value of adapting insight from CNN to the point cloud world. To this end, we propose a new neural network module dubbed EdgeConv suitable for CNN-based high-level tasks on point clouds including classification and segmentation. EdgeConv is differentiable and can be plugged into existing architectures. Compared to existing modules operating largely in extrinsic space or treating each point independently, EdgeConv has several appealing properties: It incorporates local neighborhood information; it can be stacked or recurrently applied to learn global shape properties; and in multi-layer systems affinity in feature space captures semantic characteristics over potentially long distances in the original embedding. Beyond proposing this module, we provide extensive evaluation and analysis revealing that EdgeConv captures and exploits fine-grained geometric properties of point clouds. The proposed approach achieves state-of-the-art performance on standard benchmarks including ModelNet40 and S3DIS.
+	</p>
+      </div>
+      
+<div class="section materials">
+	<h2>Materials</h2>
+	<center>
+	  <ul>
+           
+          <li class="grid">
+	      <div class="griditem">
+		<a href="https://arxiv.org/abs/1801.07829" target="_blank" class="imageLink"><img src="./dgcnn/paper.jpg"></a><br>
+		  <a href="https://arxiv.org/abs/1801.07829" target="_blank">Paper</a>
+		</div>
+	      </li>
+	  
+	    </ul>
+	    </center>
+	    </div>
+	    
+<br>
+
+<div class="section code">
+	<h2>Code and Models</h2>
+	<center>
+	  <ul>
+           
+          <li class="grid">
+	      <div class="griditem">
+		<a href="https://github.com/WangYueFt/dgcnn" target="_blank" class="imageLink"><img src="./dgcnn/code.png"></a><br>
+		  <a href="https://github.com/WangYueFt/dgcnn" target="_blank">Code and Models</a>
+		</div>
+	      </li>
+
+	    </ul>
+	    </center>
+	    </div>
+	    
+<br>
+
+<div class="section citation">
+	<h2>Citation</h2>
+	<div class="section bibtex">
+	  <pre>@article{dgcnn,
+  title={Dynamic Graph CNN for Learning on Point Clouds},
+  author={Yue Wang, Yongbin Sun, Ziwei Liu, Sanjay E. Sarma, Michael M. Bronstein, Justin M. Solomon},
+  journal={arXiv preprint arXiv:1801.07829},
+  year={2018}
+}</pre>
+	  </div>
+      </div>
+
+</body></html>
