@@ -49,6 +49,17 @@
 Talking face generation aims to synthesize a sequence of face images that correspond to given speech semantics. However, when people talk, the subtle movements of their face region are usually a complex combination of the intrinsic face appearance of the subject and also the extrinsic speech to be delivered. Existing works either focus on the former, which constructs the specific face appearance model on a single subject; or the latter, which models the identity-agnostic transformation between lip motion and speech. In this work, we integrate both aspects and enable arbitrary-subject talking face generation by learning disentangled audio-visual representation. We assume the talking face sequence is actually a composition of both subject-related information and speech-related information. These two spaces are then explicitly disentangled through a novel associative-and-adversarial training process. The disentangled representation has an additional advantage that both audio and video can serve as the source of speech information for generation. Extensive experiments show that our proposed approach can generate realistic talking face sequences on arbitrary subjects with much clearer lip motion patterns. We also demonstrate the learned audio-visual representation is extremely useful for applications like automatic lip reading and audio-video retrieval.
 	</p>
       </div>
+
+<div class="section demo">
+	<h2>Demo Video</h2>
+	<br>
+	<center>
+	  <iframe width="810" height="480" src="https://www.youtube.com/embed/-J2zANwdjcQ" frameborder="0" allowfullscreen></iframe>
+	</video>
+	    </center>
+	    </div>
+
+<br>
       
 <div class="section materials">
 	<h2>Materials</h2>
@@ -75,8 +86,8 @@ Talking face generation aims to synthesize a sequence of face images that corres
            
           <li class="grid">
 	      <div class="griditem">
-		<a href="" target="_blank" class="imageLink"><img src="./talkingface/code.png"></a><br>
-		  <a href="" target="_blank">Code and Models</a>
+		<a href="https://github.com/Hangz-nju-cuhk/Talking-Face-Generation-DAVS" target="_blank" class="imageLink"><img src="./talkingface/code.png"></a><br>
+		  <a href="https://github.com/Hangz-nju-cuhk/Talking-Face-Generation-DAVS" target="_blank">Code and Models</a>
 		</div>
 	      </li>
 
@@ -89,7 +100,7 @@ Talking face generation aims to synthesize a sequence of face images that corres
 <div class="section citation">
 	<h2>Citation</h2>
 	<div class="section bibtex">
-	  <pre>@article{dgcnn,
+	  <pre>@article{zhou2018talking,
   title={Talking Face Generation by Adversarially Disentangled Audio-Visual Representation},
   author={Hang Zhou, Yu Liu, Ziwei Liu, Ping Luo, Xiaogang Wang},
   journal={arXiv preprint arXiv:1801.07829},
