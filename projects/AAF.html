@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Adaptive Affinity Fields for Semantic Segmentation</title>
+
+<!-- Meta tags for search engines to crawl -->
+<meta name="robots" content="index,follow">
+<meta name="description" content="Semantic segmentation has made much progress with increasingly powerful pixel-wise classifiers and incorporating structural priors via Conditional Random Fields (CRF) or Generative Adversarial Networks (GAN). We propose a simpler alternative that learns to verify the spatial structure of segmentation during training only. Unlike existing approaches that enforce semantic labels on individual pixels and match labels between neighbouring pixels, we propose the concept of Adaptive Affinity Fields (AAF) to capture and match the semantic relations between neighbouring pixels in the label space. We use adversarial learning to select the optimal affinity field size for each semantic category. It is formulated as a minimax problem, optimizing our segmentation neural network in a best worst-case learning scenario. AAF is versatile for representing structures as a collection of pixel-centric relations, easier to train than GAN and more efficient than CRF without run-time inference. Our extensive evaluations on PASCAL VOC 2012, Cityscapes, and GTA5 datasets demonstrate its above-par segmentation performance and robust generalization across domains.">
+<meta name="keywords" content="semantic segmentation; affinity field; adversarial learning;">
+<link rel="author" href="https://liuziwei7.github.io/">
+
+<!-- Fonts and stuff -->
+<link href="./aaf/css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./aaf/project.css" media="screen">
+<link rel="stylesheet" type="text/css" media="screen" href="./aaf/iconize.css">
+<script async="" src="./aaf/prettify.js"></script>
+
+
+</head>
+
+<body>
+  <div id="content">
+    <div id="content-inner">
+      
+      <div class="section head">
+	<h1>Adaptive Affinity Fields for Semantic Segmentation</h1>
+
+	<div class="authors">
+	  <a href="https://www1.icsi.berkeley.edu/~twke/">Tsung-Wei Ke*</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="https://www.linkedin.com/in/jyh-jing-hwang-b682b561">Jyh-Jing Hwang*</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="https://liuziwei7.github.io/">Ziwei Liu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://www1.icsi.berkeley.edu/~stellayu/">Stella X. Yu</a>
+	</div>
+
+	<div class="affiliations">
+	  <a href="https://www.berkeley.edu/">UC Berkeley / </a>
+	  <a href="https://www.icsi.berkeley.edu/icsi/">ICSI</a>
+	</div>
+
+	<div class="venue">European Conference on Computer Vision (<a href="http://www.eccv2018.org/" target="_blank">ECCV</a>) 2018</div>
+      </div>
+
+      
+      <center><img src="./aaf/intro.png" border="0" width="90%"></center>
+
+<div class="section abstract">
+	<h2>Abstract</h2>
+	<br>
+	<p>
+Semantic segmentation has made much progress with increasingly powerful pixel-wise classifiers and incorporating structural priors via Conditional Random Fields (CRF) or Generative Adversarial Networks (GAN). We propose a simpler alternative that learns to verify the spatial structure of segmentation during training only. Unlike existing approaches that enforce semantic labels on individual pixels and match labels between neighbouring pixels, we propose the concept of Adaptive Affinity Fields (AAF) to capture and match the semantic relations between neighbouring pixels in the label space. We use adversarial learning to select the optimal affinity field size for each semantic category. It is formulated as a minimax problem, optimizing our segmentation neural network in a best worst-case learning scenario. AAF is versatile for representing structures as a collection of pixel-centric relations, easier to train than GAN and more efficient than CRF without run-time inference. Our extensive evaluations on PASCAL VOC 2012, Cityscapes, and GTA5 datasets demonstrate its above-par segmentation performance and robust generalization across domains.
+	</p>
+      </div>
+      
+<div class="section materials">
+	<h2>Materials</h2>
+	<center>
+	  <ul>
+           
+          <li class="grid">
+	      <div class="griditem">
+		<a href="https://arxiv.org/abs/1803.10335" target="_blank" class="imageLink"><img src="./aaf/paper.jpg"></a><br>
+		  <a href="https://arxiv.org/abs/1803.10335" target="_blank">Paper</a>
+		</div>
+	      </li>
+	  
+	    </ul>
+	    </center>
+	    </div>
+	    
+<br>
+
+<div class="section code">
+	<h2>Code and Models</h2>
+	<center>
+	  <ul>
+           
+          <li class="grid">
+	      <div class="griditem">
+		<a href="" target="_blank" class="imageLink"><img src="./aaf/code.png"></a><br>
+		  <a href="" target="_blank">Code and Models</a>
+		</div>
+	      </li>
+
+	    </ul>
+	    </center>
+	    </div>
+
+<br>
+
+<div class="section citation">
+	<h2>Citation</h2>
+	<div class="section bibtex">
+	  <pre>@inproceedings{aaf2018,
+ author = {Ke, Tsung-Wei and Hwang, Jyh-Jing and Liu, Ziwei and Yu, Stella X.},
+ title = {Adaptive Affinity Fields for Semantic Segmentation},
+ booktitle = {European Conference on Computer Vision (ECCV)},
+ month = {September},
+ year = {2018} 
+}</pre>
+	  </div>
+      </div>
+
+</body></html>
