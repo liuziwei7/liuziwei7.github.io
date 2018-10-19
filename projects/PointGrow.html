@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>PointGrow: Autoregressively Learned Point Cloud Generation with Self-Attention</title>
+
+<!-- Meta tags for search engines to crawl -->
+<meta name="robots" content="index,follow">
+<meta name="description" content="A point cloud is an agile 3D representation, efficiently modeling an object's surface geometry. However, these surface-centric properties also pose challenges on designing tools to recognize and synthesize point clouds. This work presents a novel autoregressive model, PointGrow, which generates realistic point cloud samples from scratch or conditioned on given semantic contexts. Our model operates recurrently, with each point sampled according to a conditional distribution given its previously-generated points. Since point cloud object shapes are typically encoded by long-range interpoint dependencies, we augment our model with dedicated self-attention modules to capture these relations. Extensive evaluation demonstrates that PointGrow achieves satisfying performance on both unconditional and conditional point cloud generation tasks, with respect to fidelity, diversity and semantic preservation. Further, conditional PointGrow learns a smooth manifold of given image conditions where 3D shape interpolation and arithmetic calculation can be performed inside.">
+<meta name="keywords" content="point cloud generation; autoregressive model; self-attention; 3D vision; deep learning;">
+<link rel="author" href="https://liuziwei7.github.io/">
+
+<!-- Fonts and stuff -->
+<link href="./pointgrow/css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./pointgrow/project.css" media="screen">
+<link rel="stylesheet" type="text/css" media="screen" href="./pointgrow/iconize.css">
+<script async="" src="./pointgrow/prettify.js"></script>
+
+
+</head>
+
+<body>
+  <div id="content">
+    <div id="content-inner">
+      
+      <div class="section head">
+	<h1>PointGrow: Autoregressively Learned Point Cloud Generation with Self-Attention</h1>
+
+	<div class="authors">
+	  <a href="https://autoid.mit.edu/people-2">Yongbin Sun</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="https://www.csail.mit.edu/person/yue-wang">Yue Wang</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="https://liuziwei7.github.io/">Ziwei Liu</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://www.mit.edu/~j_siegel/">Joshua E. Siegel</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://meche.mit.edu/people/faculty/sesarma%40mit.edu">Sanjay E. Sarma</a><sup>1</sup>
+	</div>
+
+	<div class="affiliations">
+	  1. <a href="http://web.mit.edu/">Massachusetts Institute of Technology</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  2. <a href="http://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</div>
+
+	<div class="venue">Preprint Manuscript (<a href="https://arxiv.org" target="_blank">Arxiv</a>) 2018</div>
+      </div>
+
+      
+      <center><img src="./pointgrow/intro.png" border="0" width="90%"></center>
+
+<div class="section abstract">
+	<h2>Abstract</h2>
+	<br>
+	<p>
+A point cloud is an agile 3D representation, efficiently modeling an object's surface geometry. However, these surface-centric properties also pose challenges on designing tools to recognize and synthesize point clouds. This work presents a novel autoregressive model, PointGrow, which generates realistic point cloud samples from scratch or conditioned on given semantic contexts. Our model operates recurrently, with each point sampled according to a conditional distribution given its previously-generated points. Since point cloud object shapes are typically encoded by long-range interpoint dependencies, we augment our model with dedicated self-attention modules to capture these relations. Extensive evaluation demonstrates that PointGrow achieves satisfying performance on both unconditional and conditional point cloud generation tasks, with respect to fidelity, diversity and semantic preservation. Further, conditional PointGrow learns a smooth manifold of given image conditions where 3D shape interpolation and arithmetic calculation can be performed inside.
+	</p>
+      </div>
+      
+<div class="section materials">
+	<h2>Materials</h2>
+	<center>
+	  <ul>
+           
+          <li class="grid">
+	      <div class="griditem">
+		<a href="https://arxiv.org/abs/1810.05591" target="_blank" class="imageLink"><img src="./pointgrow/paper.jpg"></a><br>
+		  <a href="https://arxiv.org/abs/1810.05591" target="_blank">Paper</a>
+		</div>
+	      </li>
+	  
+	    </ul>
+	    </center>
+	    </div>
+	    
+<br>
+
+<div class="section code">
+	<h2>Code and Models</h2>
+	<center>
+	  <ul>
+           
+          <li class="grid">
+	      <div class="griditem">
+		<a href="https://github.com/syb7573330/PointGrow" target="_blank" class="imageLink"><img src="./pointgrow/code.png"></a><br>
+		  <a href="https://github.com/syb7573330/PointGrow" target="_blank">Code and Models</a>
+		</div>
+	      </li>
+
+	    </ul>
+	    </center>
+	    </div>
+	    
+<br>
+
+<div class="section citation">
+	<h2>Citation</h2>
+	<div class="section bibtex">
+	  <pre>@article{sun2018pointgrow,
+title={PointGrow: Autoregressively Learned Point Cloud Generation with Self-Attention},
+author={Sun, Yongbin and Wang, Yue and Liu, Ziwei and Siegel, Joshua E and Sarma, Sanjay E},
+journal={arXiv preprint arXiv:1810.05591},
+year={2018}
+}</pre>
+	  </div>
+      </div>
+
+</body></html>
