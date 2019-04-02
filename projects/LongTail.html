@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Large-Scale Long-Tailed Recognition in an Open World</title>
+
+<!-- Meta tags for search engines to crawl -->
+<meta name="robots" content="index,follow">
+<meta name="description" content="The visual world is inherently long-tailed and open-set, posing challenges on the existing data-hungry learning paradigm. Though few-shot learning demonstrates promising results on quickly recognizing tail classes, it neglects the effects brought by head classes and open classes. In this work, we formally define the problem of open long-tailed recognition (OLTR) as optimizing for the overall accuracy of a naturally-distributed dataset with the presence of open classes. To this end, we propose a novel dynamic meta-embedding that learns to simultaneously (1) transfer visual concepts among head-class and tail-class embeddings, and (2) calibrate embedding norms to increase their robustness to open classes. Specifically, the dynamic meta-embedding is the combination of a ``direct feature'' and a ``memory feature''. The ``direct feature'' is updated by the standard stochastic gradient descent while the ``memory feature'' is hallucinated by associating and querying a memory module. Finally, the embedding norm is dynamically calibrated by calculating its reachability to the learned memory module. To facilitate large-scale investigation, we tailer existing object-centric (ImageNet), scene-centric (Places), and face-centric (MS1M) datasets to the open long-tailed setting and set up dedicated evaluation protocols. Extensive experiments show that our framework is capable of learning effective and robust embeddings for OLTR and achieves consistent gains on all the benchmarks.">
+<meta name="keywords" content="long-tail recognition; open-world; continual learning; imbalanced classification; computer vision; deep learning">
+<link rel="author" href="https://liuziwei7.github.io/">
+
+<!-- Fonts and stuff -->
+<link href="./longtail/css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./longtail/project.css" media="screen">
+<link rel="stylesheet" type="text/css" media="screen" href="./longtail/iconize.css">
+<script async="" src="./longtail/prettify.js"></script>
+
+
+</head>
+
+<body>
+  <div id="content">
+    <div id="content-inner">
+      
+      <div class="section head">
+	<h1>Large-Scale Long-Tailed Recognition in an Open World</h1>
+
+	<div class="authors">
+	  <a href="https://liuziwei7.github.io/">Ziwei Liu</a><sup>1,2</sup>*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="https://github.com/zhmiao">Zhongqi Miao</a><sup>2</sup>*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="https://xiaohangzhan.github.io/">Xiaohang Zhan</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://pwang.pw/">Jiayun Wang</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="http://boqinggong.info/">Boqing Gong</a><sup>3,2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  <a href="https://www1.icsi.berkeley.edu/~stellayu/">Stella X. Yu</a><sup>2</sup>
+	</div>
+
+	<div class="affiliations">
+	  1. <a href="http://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  2. <a href="https://www.berkeley.edu/">UC Berkeley / ICSI</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	  3. <a href="https://research.google.com/">Google Inc.</a>
+	</div>
+
+	<div class="venue">IEEE Conference on Computer Vision and Pattern Recognition (<a href="http://cvpr2019.thecvf.com/" target="_blank">CVPR</a>) 2019, <font color="#e86e14">Oral Presentation</font> </div>
+      </div>
+      
+      <center><img src="./longtail/intro.png" border="0" width="90%"></center>
+
+<div class="section abstract">
+	<h2>Abstract</h2>
+	<br>
+	<p>
+The visual world is inherently long-tailed and open-set, posing challenges on the existing data-hungry learning paradigm. Though few-shot learning demonstrates promising results on quickly recognizing tail classes, it neglects the effects brought by head classes and open classes. In this work, we formally define the problem of open long-tailed recognition (OLTR) as optimizing for the overall accuracy of a naturally-distributed dataset with the presence of open classes. To this end, we propose a novel dynamic meta-embedding that learns to simultaneously (1) transfer visual concepts among head-class and tail-class embeddings, and (2) calibrate embedding norms to increase their robustness to open classes. Specifically, the dynamic meta-embedding is the combination of a ``direct feature'' and a ``memory feature''. The ``direct feature'' is updated by the standard stochastic gradient descent while the ``memory feature'' is hallucinated by associating and querying a memory module. Finally, the embedding norm is dynamically calibrated by calculating its reachability to the learned memory module. To facilitate large-scale investigation, we tailer existing object-centric (ImageNet), scene-centric (Places), and face-centric (MS1M) datasets to the open long-tailed setting and set up dedicated evaluation protocols. Extensive experiments show that our framework is capable of learning effective and robust embeddings for OLTR and achieves consistent gains on all the benchmarks.
+	</p>
+      </div>
+
+<!-- <div class="section demo">
+	<h2>Demo Video</h2>
+	<br>
+	<center>
+	  <iframe width="810" height="480" src="https://www.youtube.com/embed/-J2zANwdjcQ" frameborder="0" allowfullscreen></iframe>
+	</video>
+	    </center>
+	    </div>
+
+<br> -->
+      
+<div class="section materials">
+	<h2>Materials</h2>
+	<center>
+	  <ul>
+           
+          <li class="grid">
+	      <div class="griditem">
+		<a href="https://arxiv.org/abs/1807.07860" target="_blank" class="imageLink"><img src="./longtail/paper.jpg"></a><br>
+		  <a href="https://arxiv.org/abs/1807.07860" target="_blank">Paper</a>
+		</div>
+	      </li>
+	  
+	    </ul>
+	    </center>
+	    </div>
+	    
+<br>
+
+<div class="section code">
+	<h2>Code and Models</h2>
+	<center>
+	  <ul>
+           
+          <li class="grid">
+	      <div class="griditem">
+		<a href="https://github.com/zhmiao/OpenLongTailRecognition-OLTR" target="_blank" class="imageLink"><img src="./longtail/code.png"></a><br>
+		  <a href="https://github.com/zhmiao/OpenLongTailRecognition-OLTR" target="_blank">Code and Models</a>
+		</div>
+	      </li>
+
+	    </ul>
+	    </center>
+	    </div>
+
+<br>
+
+<div class="section citation">
+	<h2>Citation</h2>
+	<div class="section bibtex">
+	  <pre>@inproceedings{openlongtailrecognition,
+  title={Large-Scale Long-Tailed Recognition in an Open World},
+  author={Ziwei Liu, Zhongqi Miao, Xiaohang Zhan, Jiayun Wang, Boqing Gong, Stella X. Yu},
+  booktitle={IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2019}
+}</pre>
+	  </div>
+      </div>
+
+</body></html>
