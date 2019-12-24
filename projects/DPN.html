@@ -4,9 +4,9 @@
 
 <!-- Meta tags for search engines to crawl -->
 <meta name="robots" content="index,follow">
-<meta name="description" content="This paper addresses semantic image segmentation by incorporating rich information into Markov Random Field (MRF), including high-order relations and mixture of label contexts. Unlike previous works that optimized MRFs using iterative algorithm, we solve MRF by proposing a Convolutional Neural Network (CNN), namely Deep Parsing Network (DPN), which enables deterministic end-to-end computation in a single forward pass. Specifically, DPN extends a contemporary CNN architecture to model unary terms and additional layers are carefully devised to approximate the mean field algorithm (MF) for pairwise terms. It has several appealing properties. First, different from the recent works that combined CNN and MRF, where many iterations of MF were required for each training image during back-propagation, DPN is able to achieve high performance by approximating one iteration of MF. Second, DPN represents various types of pairwise terms, making many existing works as its special cases. Third, DPN makes MF easier to be parallelized and speeded up in Graphical Processing Unit (GPU). DPN is thoroughly evaluated on the PASCAL VOC 2012 dataset, where a single DPN model yields a new state-of-the-art segmentation accuracy of 77.5%.>
+<meta name="description" content="This paper addresses semantic image segmentation by incorporating rich information into Markov Random Field (MRF), including high-order relations and mixture of label contexts. Unlike previous works that optimized MRFs using iterative algorithm, we solve MRF by proposing a Convolutional Neural Network (CNN), namely Deep Parsing Network (DPN), which enables deterministic end-to-end computation in a single forward pass. Specifically, DPN extends a contemporary CNN architecture to model unary terms and additional layers are carefully devised to approximate the mean field algorithm (MF) for pairwise terms. It has several appealing properties. First, different from the recent works that combined CNN and MRF, where many iterations of MF were required for each training image during back-propagation, DPN is able to achieve high performance by approximating one iteration of MF. Second, DPN represents various types of pairwise terms, making many existing works as its special cases. Third, DPN makes MF easier to be parallelized and speeded up in Graphical Processing Unit (GPU). DPN is thoroughly evaluated on the PASCAL VOC 2012 dataset, where a single DPN model yields a new state-of-the-art segmentation accuracy of 77.5%.">
 <meta name="keywords" content="semantic image segmentation; markov random field; mean field algorithm; deep learning; convolutional neural network; computer vision;">
-<link rel="author" href="personal.ie.cuhk.edu.hk/~lz013/">
+<link rel="author" href="https://liuziwei7.github.io/">
 
 <!-- Fonts and stuff -->
 <link href="./dpn/css" rel="stylesheet" type="text/css">
@@ -25,8 +25,8 @@
 	<h1>Semantic Image Segmentation via Deep Parsing Network</h1>
 
 	<div class="authors">
-	  <a href="http://personal.ie.cuhk.edu.hk/~lz013/">Ziwei Liu*</a>&nbsp;&nbsp;
-	  <a href="http://mmlab.ie.cuhk.edu.hk/">Xiaoxiao Li*</a>&nbsp;&nbsp;
+	  <a href="https://liuziwei7.github.io/">Ziwei Liu*</a>&nbsp;&nbsp;
+	  <a href="https://scholar.google.com.hk/citations?user=udZam0oAAAAJ">Xiaoxiao Li*</a>&nbsp;&nbsp;
 	  <a href="http://personal.ie.cuhk.edu.hk/~pluo/">Ping Luo</a>&nbsp;&nbsp;
 	  <a href="http://personal.ie.cuhk.edu.hk/~ccloy/" >Chen Change Loy</a>&nbsp;&nbsp;
 	  <a href="http://www.ie.cuhk.edu.hk/people/xotang.shtml">Xiaoou Tang</a>
